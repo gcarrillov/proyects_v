@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla Hoy, Vive Mejor Mañana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Estilos para las imágenes */
+        .imagen-introduccion, .imagen-consejos, .imagen-pie {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 10px auto;
+            display: block;
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 10px;
+            }
+            main {
+                padding: 10px;
+            }
+            section {
+                margin-bottom: 10px;
+            }
+            .imagen-introduccion, .imagen-consejos, .imagen-pie {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recicla Hoy, Vive Mejor Mañana</h1>
+        <p>Únete a nuestra campaña para un futuro más sostenible</p>
+    </header>
+    <main>
+        <section id="introduccion">
+            <h2>¿Por qué reciclar?</h2>
+            <img src="imgs/reciclaje.jpeg" alt="Imagen de introducción" class="imagen-introduccion">
+            <p>Reciclar no es solo separar basura: es una forma de transformar la cultura del consumo y proteger el planeta.</p>
+            <br><p><strong>Beneficios del Reciclaje</strong><br>
+                    <br><strong>Reduce la contaminación:</strong> Menos basura en ríos y calles, menos emisiones tóxicas al quemar residuos.
+                    <br><strong>Ahorra recursos naturales:</strong> Se evita la extracción de nuevos materiales como petróleo, metales o madera.
+                    <br><strong>Disminuye el uso de energía:</strong> Fabricar productos reciclados consume menos energía que hacerlos desde cero.
+                    <br><strong>Fomenta una economía circular:</strong> Los residuos se convierten en materia prima para nuevos productos.
+                    <br><strong>Genera empleo:</strong> El reciclaje activa industrias de recolección, clasificación y transformación de materiales.
+                    <br><strong>Promueve conciencia social:</strong> Enseña que cada acción cuenta y que todos podemos ser parte del cambio.
+            </p>
+        </section>
+        <section id="consejos">
+            <h2>Consejos prácticos</h2>
+            <img src="imgs/reciclaje1.jpg" alt="Imagen de consejos" class="imagen-consejos">
+            <ul>
+                <li>Separa vidrio, plástico, papel y orgánicos.</li>
+                <li>Reutiliza frascos y bolsas antes de desecharlos.</li>
+                <li>Opta por productos con empaques reciclables.</li>
+                <li>Busca puntos de reciclaje cercanos.</li>
+            </ul>
+        </section>
+        <section id="compromiso">
+            <h2>¡Comprométete hoy!</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                <button type="submit">Comprometerme</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="imgs/estesi.PNG" alt="Imagen de pie de página" class="imagen-pie">
+        <p>Contacto: gcarrillov@unsa.edu.pe</p>
+    </footer>
+</body>
+</html>
