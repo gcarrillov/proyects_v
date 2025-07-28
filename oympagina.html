@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Metodologías y Economía</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #25768f;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #0d5a50;
+            padding: 1em;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #068569;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+        .section {
+            background-color: white;
+            padding: 2em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1f687e;
+            border-bottom: 2px solid #46e653;
+            padding-bottom: 0.5em;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .diagram {
+            max-width: 100%;
+            height: auto;
+            margin: 1em 0;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5em 0;
+            }
+            .container {
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog de Metodologías y Economía</h1>
+        <p>Explora conceptos clave en métodos ágiles, lean, diagramas de Ishikawa y economía</p>
+        <p>UNSA-FIPS-EPIS</p>
+    </header>
+    <nav>
+        <a href="#agiles">Métodos Ágiles</a>
+        <a href="#lean">Metodología Lean</a>
+        <a href="#ishikawa">Diagrama de Ishikawa</a>
+        <a href="#macroeconomia">Macroeconomía</a>
+        <a href="#microeconomia">Microeconomía</a>
+    </nav>
+    <div class="container">
+        <div class="section" id="agiles">
+            <h2>Métodos Ágiles</h2>
+            <p>Los métodos ágiles son enfoques de gestión de proyectos que priorizan la flexibilidad, la colaboración y la entrega incremental. Surgieron como respuesta a los métodos tradicionales, como el modelo en cascada, que resultaban rígidos para proyectos dinámicos, especialmente en el desarrollo de software.</p>
+            <p>Los principios ágiles se basan en el <strong>Manifiesto Ágil</strong> (2001), que valora:</p>
+            <ul>
+                <li><strong>Individuos e interacciones</strong> sobre procesos y herramientas.</li>
+                <li><strong>Software funcional</strong> sobre documentación extensiva.</li>
+                <li><strong>Colaboración con el cliente</strong> sobre negociación contractual.</li>
+                <li><strong>Respuesta al cambio</strong> sobre seguir un plan rígido.</li>
+            </ul>
+            <p>Entre los métodos ágiles más conocidos están:</p>
+            <ul>
+                <li><strong>Scrum:</strong> Utiliza ciclos cortos (sprints) de 1-4 semanas, con roles definidos como Product Owner, Scrum Master y equipo de desarrollo.</li>
+                <li><strong>Kanban:</strong> Se centra en visualizar el flujo de trabajo en tableros, limitando el trabajo en curso para mejorar la eficiencia.</li>
+                <li><strong>Extreme Programming (XP):</strong> Enfoca en prácticas como el desarrollo incremental, pruebas continuas y pair programming.</li>
+            </ul>
+            <p>Los métodos ágiles fomentan equipos autoorganizados, revisiones frecuentes y adaptabilidad a los cambios, lo que los hace ideales para entornos donde los requisitos evolucionan rápidamente.</p>
+        </div>
+
+        <div class="section" id="lean">
+            <h2>Metodología Lean</h2>
+            <p>La metodología Lean, originada en el Sistema de Producción de Toyota, busca maximizar el valor para el cliente eliminando desperdicios (muda) en los procesos. Se centra en entregar productos o servicios de alta calidad utilizando menos recursos.</p>
+            <p>Los cinco principios fundamentales de Lean son:</p>
+            <ol>
+                <li><strong>Definir valor:</strong> Identificar qué es valioso para el cliente.</li>
+                <li><strong>Mapear la cadena de valor:</strong> Analizar el flujo de trabajo para eliminar actividades que no aportan valor.</li>
+                <li><strong>Crear flujo:</strong> Asegurar que el proceso fluya sin interrupciones.</li>
+                <li><strong>Establecer un sistema pull:</strong> Producir solo lo que el cliente demanda.</li>
+                <li><strong>Buscar la perfección:</strong> Mejorar continuamente los procesos.</li>
+            </ol>
+            <p>Lean se aplica en diversas industrias, desde manufactura hasta startups (Lean Startup), donde se enfoca en validar hipótesis rápidamente mediante ciclos de construir-medir-aprender. Ejemplo: desarrollar un Producto Mínimo Viable (MVP) para probar ideas con el menor esfuerzo posible.</p>
+        </div>
+
+        <div class="section" id="ishikawa">
+            <h2>Diagrama de Ishikawa</h2>
+            <p>El Diagrama de Ishikawa, también conocido como diagrama de causa-efecto o espina de pescado, es una herramienta para identificar las causas raíz de un problema. Fue desarrollado por Kaoru Ishikawa en la década de 1960 como parte de la gestión de calidad.</p>
+            <p>El diagrama organiza las posibles causas en categorías, típicamente:</p>
+            <ul>
+                <li><strong>Personas:</strong> Factores relacionados con el personal, como capacitación o motivación.</li>
+                <li><strong>Procesos:</strong> Problemas en los procedimientos o flujos de trabajo.</li>
+                <li><strong>Equipos:</strong> Fallos en herramientas o tecnología.</li>
+                <li><strong>Materiales:</strong> Defectos en los insumos utilizados.</li>
+                <li><strong>Medición:</strong> Errores en los sistemas de medición o control.</li>
+                <li><strong>Entorno:</strong> Factores externos como condiciones ambientales.</li>
+            </ul>
+            <p>Para crear un diagrama de Ishikawa:</p>
+            <ol>
+                <li>Identificar el problema principal y colocarlo en la "cabeza" del diagrama.</li>
+                <li>Dibujar las "espinas" con las categorías de causas.</li>
+                <li>Realizar una lluvia de ideas para listar causas específicas en cada categoría.</li>
+                <li>Analizar y priorizar las causas más probables.</li>
+            </ol>
+            <p>Este método es ampliamente utilizado en calidad total, Six Sigma y resolución de problemas en equipo.</p>
+        </div>
+
+        <div class="section" id="macroeconomia">
+            <h2>Macroeconomía</h2>
+            <p>La macroeconomía estudia la economía en su conjunto, analizando variables agregadas como el Producto Interno Bruto (PIB), la inflación, el desempleo y las políticas fiscales y monetarias. Su objetivo es entender cómo funcionan las economías nacionales o globales y predecir su comportamiento.</p>
+            <p>Conceptos clave:</p>
+            <ul>
+                <li><strong>PIB:</strong> Mide el valor total de bienes y servicios producidos en un país. Puede ser nominal (precios actuales) o real (precios constantes).</li>
+                <li><strong>Inflación:</strong> Aumento sostenido de los precios, medido por índices como el IPC (Índice de Precios al Consumidor).</li>
+                <li><strong>Desempleo:</strong> Porcentaje de la fuerza laboral sin trabajo. Tipos: friccional, estructural, cíclico.</li>
+                <li><strong>Política fiscal:</strong> Uso del gasto público y los impuestos para influir en la economía.</li>
+                <li><strong>Política monetaria:</strong> Control del suministro de dinero y tasas de interés por parte de bancos centrales.</li>
+            </ul>
+            <p>Modelos macroeconómicos, como el keynesiano o el clásico, ayudan a explicar fenómenos como los ciclos económicos, el crecimiento a largo plazo y las crisis financieras.</p>
+        </div>
+
+        <div class="section" id="microeconomia">
+            <h2>Microeconomía</h2>
+            <p>La microeconomía analiza el comportamiento de agentes individuales, como consumidores, empresas y mercados específicos. Se enfoca en cómo se toman decisiones sobre la asignación de recursos limitados.</p>
+            <p>Conceptos clave:</p>
+            <ul>
+                <li><strong>Oferta y demanda:</strong> Determinan los precios y cantidades en un mercado. La interacción establece el equilibrio de mercado.</li>
+                <li><strong>Elasticidad:</strong> Mide la sensibilidad de la demanda o la oferta ante cambios en precios o ingresos.</li>
+                <li><strong>Costos:</strong> Incluyen costos fijos, variables, marginales y de oportunidad, que influyen en las decisiones de producción.</li>
+                <li><strong>Estructuras de mercado:</strong> Van desde competencia perfecta (muchos vendedores, productos idénticos) hasta monopolios (un solo vendedor).</li>
+                <li><strong>Teoría del consumidor:</strong> Explica cómo los individuos maximizan su utilidad bajo restricciones presupuestarias.</li>
+            </ul>
+            <p>La microeconomía es fundamental para entender el comportamiento de los mercados, la fijación de precios y las decisiones estratégicas de las empresas.</p>
+        </div>
+    </div>
+    <footer>
+        <img src="imgs/estesi.PNG" alt="Imagen de pie de página" class="imagen-pie">
+        <p>Realizado por: Gustavo Alonso, Carrillo Villalta</p>
+        <p>Contacto: gcarrillov@unsa.edu.pe</p>
+    </footer>
+</body>
+</html>
