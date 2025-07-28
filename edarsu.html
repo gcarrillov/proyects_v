@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Únete a nuestra campaña de reciclaje para un futuro más sostenible. Aprende por qué reciclar y cómo hacerlo correctamente.">
+    <meta name="keywords" content="reciclaje, sostenibilidad, medio ambiente, economía circular">
+    <meta name="author" content="Recicla Hoy">
+    <title>Recicla Hoy, Vive Mejor Mañana</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            color: #2e2e2e;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+            color: #2e7d32;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        li::before {
+            content: '♻';
+            position: absolute;
+            left: 0;
+            color: #2e7d32;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        label {
+            font-weight: bold;
+            color: #2e7d32;
+        }
+        input[type="text"] {
+            padding: 0.8rem;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #2e7d32;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1b5e20;
+        }
+        button:focus {
+            outline: 2px solid #1b5e20;
+            outline-offset: 2px;
+        }
+        .confirmation-message {
+            display: none;
+            color: #2e7d32;
+            font-weight: bold;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #212121;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+        .imagen-introduccion, .imagen-consejos, .imagen-pie {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            main {
+                padding: 1rem;
+            }
+            section {
+                padding: 1rem;
+            }
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .imagen-introduccion, .imagen-consejos, .imagen-pie {
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 1rem;
+            }
+            header h1 {
+                font-size: 1.5rem;
+            }
+            input[type="text"] {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recicla Hoy, Vive Mejor Mañana</h1>
+        <p>Únete a nuestra campaña para un futuro más sostenible</p>
+    </header>
+    <main>
+        <section id="introduccion" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">¿Por qué reciclar?</h2>
+            <div class="image-container">
+                <img src="imgs/reciclaje.jpeg" alt="Materiales reciclables en un contenedor" class="imagen-introduccion">
+                <img src="imgs/reciclaje1.jpg" alt="Contenedores de reciclaje clasificados" class="imagen-introduccion">
+            </div>
+            <p>Reciclar no es solo separar basura: es una forma de transformar la cultura del consumo y proteger el planeta.</p>
+            <p><strong>Beneficios del Reciclaje</strong></p>
+            <ul>
+                <li>Reduce la contaminación: Menos basura en ríos y calles, menos emisiones tóxicas al quemar residuos.</li>
+                <li>Ahorra recursos naturales: Se evita la extracción de nuevos materiales como petróleo, metales o madera.</li>
+                <li>Disminuye el uso de energía: Fabricar productos reciclados consume menos energía que hacerlos desde cero.</li>
+                <li>Fomenta una economía circular: Los residuos se convierten en materia prima para nuevos productos.</li>
+                <li>Genera empleo: El reciclaje activa industrias de recolección, clasificación y transformación de materiales.</li>
+                <li>Promueve conciencia social: Enseña que cada acción cuenta y que todos podemos ser parte del cambio.</li>
+            </ul>
+        </section>
+        <section id="consejos" aria-labelledby="consejos-heading">
+            <h2 id="consejos-heading">Consejos prácticos</h2>
+            <div class="image-container">
+                <img src="imgs/reciclaje2.jpg" alt="Persona separando residuos reciclables" class="imagen-consejos">
+                <img src="imgs/reciclaje3.jpg" alt="Puntos de reciclaje en la comunidad" class="imagen-consejos">
+                <img src="imgs/reciclaje4.jpeg" alt="Materiales reciclables en un contenedor" class="imagen-introduccion">
+
+            </div>
+            <ul>
+                <li>Separa vidrio, plástico, papel y orgánicos.</li>
+                <li>Reutiliza frascos y bolsas antes de desecharlos.</li>
+                <li>Opta por productos con empaques reciclables.</li>
+                <li>Busca puntos de reciclaje cercanos.</li>
+            </ul>
+        </section>
+        <section id="compromiso" aria-labelledby="compromiso-heading">
+            <h2 id="compromiso-heading">¡Comprométete hoy!</h2>
+            <form id="commitment-form" aria-label="Formulario de compromiso para reciclar">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required aria-required="true">
+                <button type="submit">Comprometerme</button>
+                <p class="confirmation-message" id="confirmation">¡Gracias por comprometerte!</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="imgs/estesi.PNG" alt="Imagen de pie de página" class="imagen-pie">
+        <p>Contacto: <a href="mailto:gcarrillov@unsa.edu.pe" style="color: #4caf50;">gcarrillov@unsa.edu.pe</a></p>
+    </footer>
+    <script>
+        document.getElementById('commitment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('nombre').value.trim();
+            const confirmation = document.getElementById('confirmation');
+            if (name) {
+                confirmation.textContent = `¡Gracias, ${name}, por comprometerte con el reciclaje!`;
+                confirmation.style.display = 'block';
+                this.reset();
+                setTimeout(() => {
+                    confirmation.style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>
